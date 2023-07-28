@@ -1,0 +1,95 @@
+/*start here*/
+footer {
+  box-shadow: 0 -4px 3px rgba(0, 0, 0, 0.075);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+[class^="apexcharts-text"],
+[class^="apexcharts-title"],
+.apexcharts-legend-text {
+  color: #fff !important;
+  fill: #fff !important;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.error {
+  border: #ff0000 1px solid;
+}
+
+.hide {
+  display: none;
+}
+
+.btn-group.form-control {
+  padding: 0;
+
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.cartPanel .list-group {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+
+div.animated[role="alert"] {
+  margin-top: 5%;
+  position: fixed;
+  z-index: 150;
+  width: 100%;
+}
+
+
+img.inventoryImg {
+  /* max-width: 150px; */
+  max-height: 75px;
+  width: 100%;
+  padding: 0px 2px;
+  overflow: hidden;
+  border-radius: 5px;
+  border: solid #fff 1px;
+}
+
+.inventoryWrapper {
+  display: inline-block;
+  width: 75px;
+
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 2px;
+}
+
+.inventoryWrapper .btn {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.inventoryWrapper button {
+
+  width: 100%;
+  display: block;
+  font-size: small;
+}
+
+/*start 767*/
+@media (max-width: 767px) {
+  .badge {
+    display: block;
+    width: 100%;
+  }
+
+  .container.my-5 {
+    margin-bottom: 8rem !important;
+  }
+}
