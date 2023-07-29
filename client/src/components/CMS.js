@@ -83,8 +83,8 @@ const CMS = (props) => {
                 category,
                 price: Number(price),
                 details,
-                searchWords: searchWords,
-                images
+                searchWords: encodeURIComponent(searchWords),//need to encode to escape characters for storing in a sql database.
+                images: encodeURIComponent(images)
             };
 
             axios.put("/api/items/updateItem/", data, props.config).then(
