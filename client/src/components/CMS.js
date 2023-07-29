@@ -157,6 +157,11 @@ const CMS = (props) => {
     }
 
     const switchFunc = (func) => {
+        if (func === "edit") {
+            document.querySelector("input[name='itemName']").classList.add("hide");
+        } else if (document.querySelector("input[name='itemName']")) {
+            document.querySelector("input[name='itemName']").classList.remove("hide");
+        }
         setImages((images) => []);
         setSearchWords((searchWords) => []);
         setActiveFunc((activeFunc) => func);
